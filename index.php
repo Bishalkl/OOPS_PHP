@@ -1,36 +1,15 @@
 <?php
+class Car {
+    public $color;
 
-// class user
-class user {
-    public function getName(): string {
-        return "Bishal";
+
+    public function drive(): void {
+        echo "The {$this->color} car is driving.";
     }
 }
 
-// class productModels
-class productModel {
-    public function getProduct(): string {
-        return "toy";
-    }
-}
-
-
-// for user
-$user = new user;
-echo $user->getName();
-
-// gap
-echo "\n";
-
-// for productModels
-$productModel = new productModel;
-echo $productModel->getProduct();
-
-
-
-
-
-
-
-
+// create object
+$car = new Car();
+$this->color = "red";
+echo $car->drive();
 
